@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <tittle></tittle>
+        <style>
+                .formStyle{
+                    margin:auto;
+                    background-color:green;
+                    width:140px;
+                    height:264px;
+                    border:2px solid black;
+
+                }
+                #clear{
+                    width:140px;
+                }
+                input{
+                    width:43px;
+                    
+                }
+                #form1{
+                    width:140px;
+                    height:30px;
+                    
+                }
+                #heading{
+                    text-align:center;
+                    color:yellowgreen;
+                }
+            
+            </style>
+        
+    </head>
+   
+    <body>
+        <h3 id="heading"><u>Simple Calculator using HTML & javascript
+        </h3><br/><br/><br/>
+        <div class="formStyle">
+            <form class="form">
+                <input type="text" name="answer" id="form1"><br/><br/>
+                <input type=button value="1" onClick="form.answer.value+='1'">
+                <input type=button value="2" onClick="form.answer.value+='2'">
+                <input type=button value="3" onClick="form.answer.value+='3'"><br/><br/>
+
+                <input type=button value="4" onClick="form.answer.value+='4'">
+                <input type=button value="5" onClick="form.answer.value+='5'">
+                <input type=button value="6" onClick="form.answer.value+='6'"><br/><br/>
+
+                <input type=button value="7" onClick="form.answer.value+='7'">
+                <input type=button value="8" onClick="form.answer.value+='8'">
+                <input type=button value="9"onClick="form.answer.value+='9'"><br/><br/>
+
+                <input type=button value="+" onClick="form.answer.value+='+'">
+                <input type=button value="0" onClick="form.answer.value+='0'">
+                <input type=button value="/"onClick="form.answer.value+='/'"><br/><br/>
+                
+                <input type=button value="-" onClick="form.answer.value+='-'">
+                <input type=button value="*" onClick="form.answer.value+='*'">
+                <input type="button" value="=" onClick="form.answer.value=eval(form.answer.value)"><br/><br/>
+
+                <input type="button" name="clear" value="clear All" onClick="form.answer.value=''" id='clear'>
+                
+                
+                
+            </form>
+        </div>
+    </body>
+</html>
